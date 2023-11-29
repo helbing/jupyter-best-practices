@@ -24,5 +24,8 @@ build-backend = "poetry.core.masonry.api"
 [tool.ruff]
 extend-include = ["*.ipynb"]
 
+[tool.ruff.extend-per-file-ignores]
+"*.ipynb" = ["E402"]
+
 [tool.ruff.lint.pydocstyle]
 convention = "google"

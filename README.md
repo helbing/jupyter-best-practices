@@ -5,6 +5,10 @@ This is an example of Jupyter best practices. I always can see that many develop
 ## The tools I use
 
 - [Visual Studio Code](https://code.visualstudio.com/)
+  - [python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+  - [ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+  - [jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+  - [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [pyenv](https://github.com/pyenv/pyenv) is a simple Python version management, and I always use it to make sure the local Python version is matched with `pyproject.toml`.
 - [poetory](https://python-poetry.org/) is a Python dependency and virtual environment management, and I use it to replace pip and virtualenv.
 - [tox](https://tox.wiki/) is a tool to auto testing, linting and run other commands.
@@ -29,6 +33,13 @@ This is an example of Jupyter best practices. I always can see that many develop
   }
 }
 ```
+
+## How to use this repo
+
+1. Use visual environment, `Command + p` -> `Python: Create Environment...`
+2. Install package requires, `poetry install`
+3. Install Python 3.11, 3.12, `pyenv install 3.11 3.12`
+4. Run testcases, `tox`
 
 ## The end
 

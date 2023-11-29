@@ -15,15 +15,18 @@ This is an example of Jupyter best practices. I always can see that many develop
 // python
 {
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": true,
-      "source.organizeImports.ruff": true
+      "source.fixAll": true,
+      "source.organizeImports": true
     },
-    "editor.formatOnType": true
   },
   "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  }
 }
 ```
 

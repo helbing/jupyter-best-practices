@@ -9,8 +9,7 @@ import pandas as pd
 
 
 def data_cleansing(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Data cleansing, it will remove duplicate data and remove column of
+    """Data cleansing, it will remove duplicate data and remove column of
     order-status's is Cancelled rows.
 
     Parameters:
@@ -37,8 +36,7 @@ def handle_distribution_of_time(
     column: str = "purchase-date",
     time_format: str = "%Y-%m-%dT%H:%M:%S%z",
 ) -> np.ndarray[int]:
-    """
-    Handle the distribution of time.
+    """Handle the distribution of time.
 
     Parameters:
         df - origin data
